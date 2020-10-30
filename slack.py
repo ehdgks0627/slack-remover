@@ -27,6 +27,8 @@ class Slack:
         })
         data = res.json()
         for channel in data['channels']:
+            if channel['is_archived']:
+                continue
             channels.append((channel['id'], channel['name']))
         for mpim in data['mpims']:
             channels.append((mpim['id'], mpim['purpose']['value']))

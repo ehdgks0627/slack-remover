@@ -3,8 +3,8 @@ import requests
 from slack import Slack
 import time
 
-token = '{TOKEN HERE}'
-auth = '{AUTH HERE}'
+token = 'xoxc-317679371207-471504404707-914799581936-acaab721a3d39d68a7da6198c3871c22c82121dd9f7bd4c5f25efd25e21280d0'
+auth = 'eUHzX4zYdc0W1u2374yUh0FFmsG7qQwOZDBXHT07h2cutsPTCWTOQJjN6GSEgp8161TR1LHpFz7GI4lzCZeX3WGKk6eWHihspcH0q%2BHi6oQlBDMnMY%2FbQhm4ORgmww5ZuA9shOj95sRTMjCgm8wLS25H6OLVtbYeexlsRcL5REjbibMzLfPdTn8%3D'
 slack = Slack(token, auth)
 channel_list = slack.get_channel_list()
 for i in range(len(channel_list)):
